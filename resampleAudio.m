@@ -1,6 +1,7 @@
 function [] = resampleAudio(type, songName)
-%RESAMPLEAUDIO Summary of this function goes here
-%   Detailed explanation goes here
+% Resamples an audio file in folder "[type]s" called "[songname]" and 
+% writes the new song in the folder "resampled_[type]s as 
+% "resampled_[songName]".
 [songData, fs] = audioread(fullfile(type, songName));
 fnew = 44100;
 [P,Q] = rat(fnew/fs);
