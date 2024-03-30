@@ -6,3 +6,10 @@ Team members:
 * Christian Reed <chrireed@umich.edu>
 * Sion Kim <sionkim@umich.edu>
 * Shanmukh Ghandikota <sghandik@umich.edu>
+
+## Python
+
+1. Make the environment
+```
+conda env create --file environment.yaml
+```
