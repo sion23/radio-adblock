@@ -10,9 +10,10 @@ dependencies:
   - matplotlib-base
   - librosa
   - pandas
-  - numpy
+  - numpy=1.25
   - scipy
   - scikit-learn
   - pytorch
   - openssl  
   - tensorflow
+  - ipykernel
