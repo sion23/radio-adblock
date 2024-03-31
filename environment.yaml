@@ -5,15 +5,12 @@ channels:
 dependencies:
   - python=3.9
   - jupyterlab
-  - crepe
   - ipympl
   - matplotlib-base
   - librosa
   - pandas
-  - numpy=1.25
+  - numpy
   - scipy
   - scikit-learn
   - pytorch
-  - openssl  
-  - tensorflow
   - ipykernel
