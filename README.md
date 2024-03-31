@@ -13,3 +13,7 @@ Team members:
 ```
 conda env create --file environment.yaml
 ```
+2. If you made changes to the environment.yaml and want to remake the environment
+```
+conda env update -f environment.yaml --prune 
+```
