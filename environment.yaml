@@ -1,0 +1,18 @@
+name: audio-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - jupyterlab
+  - crepe
+  - ipympl
+  - matplotlib-base
+  - librosa
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - pytorch
+  - openssl  
+  - tensorflow
