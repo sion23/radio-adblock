@@ -5,8 +5,8 @@ close all;
 % "resampled_songs/" and "and resampled_ads/" folders. 
 % Resampling is done so that all audio files have the same sampling rate
 % to eliminate that as a potential factor in classification.
-songs = dir('songs\*.mp3');
-ads   = dir('ads\*.mp3');
+songs = dir(fullfile('songs','*.mp3'));
+ads   = dir(fullfile('ads','*.mp3'));
 for i = 1:length(songs)
     resampleAudio('songs', songs(i).name)
 end
