@@ -22,7 +22,7 @@ dataTable.title = [];
 
 %% Get MFCC's
 mfccTable = getMFCC(dataTable, clipLength);
-writetable(dataTable,'preliminary_data.csv','Delimiter',',');
+writetable(dataTable,'raw_data.csv','Delimiter',',');
 writetable(mfccTable,'mfcc_data.csv','Delimiter',',');
 
 
