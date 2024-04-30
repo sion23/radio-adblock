@@ -17,13 +17,35 @@ clipLength = 44100 .* secondsPerClip;
 %% Combine Tables
 dataTable = vertcat(songTable, adTable);
 
-dataTable.title = [];
-%dataTable.sampleRate = [];
-
 %% Get MFCC's
 mfccTable = getMFCC(dataTable, clipLength);
-writetable(dataTable,'raw_data.csv','Delimiter',',');
+
+%% Write Labels
+labels = dataTable{:, 1};
+labels = table(labels);
+writetable(labels,'labels.csv','Delimiter',',');
+
+%% Write MFCC data
+mfccTable.label      = [];
+mfccTable.sampleRate = [];
 writetable(mfccTable,'mfcc_data.csv','Delimiter',',');
 
+%% Write Raw Data
+dataTable.label = [];
+dataTable.title = [];
+dataTable.sampleRate = [];
+writetable(dataTable,'raw_data.csv','Delimiter',',');
 
+%% Write Raw Data Small
+indices = 1:50;
+songTable_small = songTable(indices, :);
+adTable_small = adTable(indices, :);
+dataTableSmall = vertcat(songTable_small, adTable_small);
+labelsSmall = dataTableSmall{:, 1};
+labelsSmall = table(labelsSmall);
+writetable(labelsSmall,'labels_small.csv','Delimiter',',');
 
+dataTableSmall.label = [];
+dataTableSmall.title = [];
+dataTableSmall.sampleRate = [];
+writetable(dataTableSmall,'raw_data_small.csv','Delimiter',',');
