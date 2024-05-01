@@ -54,14 +54,14 @@ Notebooks are already setup to use the above directories.
 
 Steps for cnn_test_complex.ipynb:
 
-  1. Add ad and song files to ./testing_ads and ./testing_songs
-  2. Run resampleRun_testing.m (requires resampleAudio_testing.m) 
-      Takes audio files (./*.mp3 or ./*.wav) stored in directories ./testing_ads and ./testing_songs and creates resampled versions in ./resampled_testing_ads and ./resampled_testing_songs. The notebook is already setup to take inputs from these two directories.
-  3. Run cnn_test_complex.ipynb
+  1. Add ad and song files to `./testing_ads` and `./testing_songs`
+  2. Run resampleRun_testing.m (requires `resampleAudio_testing.m`) 
+      Takes audio files (./*.mp3 or ./*.wav) stored in directories `./testing_ads` and `./testing_songs` and creates resampled versions in `./resampled_testing_ads` and `./resampled_testing_songs`. The notebook is already setup to take inputs from these two directories.
+  3. Run `cnn_test_complex.ipynb`
 
 **mlp_raw_embedding.ipynb**
 
 1. Add ad and song files to ./testing_ads and ./testing_songs
 2. Run resampleRun_testing.m (requires resampleAudio_testing.m) 
 3. Run `generate_data_py.ipynb` to generate raw data that is peak-normalized
-4. Run 4. mlp_raw_embedding.ipynb
+4. Run `mlp_raw_embedding.ipynb`
