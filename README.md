@@ -19,29 +19,41 @@ conda env create --file environment.yaml
 ```
 conda env update -f environment.yaml --prune 
 ```
-In order to generate the ad-removed audio samples as shown here, please refer to the following notebooks in our github:
+To demo some of our work, please refer to the following notebooks in our github:
 
 cnn_test_simple.ipynb
+
 Inputs: 
-  Single audio file (*.mp3). This audio file may be anything from a song or an ad or a custom audio file that has both a song and an ad stitched together.
+  1. Single audio file (*.mp3). This audio file may be anything from a song or an ad or a custom audio file that has both a song and an ad stitched together.
+  
 Outputs: 
-  Plots showing the confidence of our most-capable CNN models as a function of time.
+  1. Plots showing the confidence of our most-capable CNN models as a function of time.
   
 cnn_test_complex.ipynb
+
 Inputs: 
-  A directory containing songs (./*.wav) and ads (./*.wav) (notebook will combine them into a single audio file for testing)
+  1. A directory containing songs (./*.wav) and ads (./*.wav) (notebook will combine them into a single audio file for testing)
+  
 Outputs: 
-  Plots showing the confidence of our most-capable CNN models as a function of time.
-  Audio samples (*.wav) with ads muted/removed placed in ./testing_audio
+  1. Plots showing the confidence of our most-capable CNN models as a function of time.
+  2. Audio samples (*.wav) with ads muted/removed placed in ./testing_audio
 
 Recommended Directories to create in your workspace for cnn_test_complex.ipynb:
+
 ./testing_ads
+
 ./testing_songs
+
 ./testing_audio
+
 ./resampled_testing_ads
+
 ./resampled_testing_songs
+
 Notebooks are already setup to use the above directories.
+
 Steps for cnn_test_complex.ipynb:
+
   1. Add ad and song files to ./testing_ads and ./testing_songs
   2. Run resampleRun_testing.m (requires resampleAudio_testing.m) 
       Takes audio files (./*.mp3 or ./*.wav) stored in directories ./testing_ads and ./testing_songs and creates resampled versions in ./resampled_testing_ads and ./resampled_testing_songs. The notebook is already setup to take inputs from these two directories.
