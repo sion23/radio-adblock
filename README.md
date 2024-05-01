@@ -61,7 +61,7 @@ Steps for cnn_test_complex.ipynb:
 
 **mlp_raw_embedding.ipynb**
 
-1. Add ad and song files to ./testing_ads and ./testing_songs
-2. Run resampleRun_testing.m (requires resampleAudio_testing.m) 
+1. Add ad and song files to `./testing_ads` and `./testing_songs`
+2. Run resampleRun_testing.m (requires `resampleAudio_testing.m`) 
 3. Run `generate_data_py.ipynb` to generate raw data that is peak-normalized
 4. Run `mlp_raw_embedding.ipynb`
