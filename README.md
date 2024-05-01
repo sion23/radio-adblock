@@ -40,15 +40,15 @@ Outputs:
 
 Recommended Directories to create in your workspace for cnn_test_complex.ipynb:
 
-./testing_ads
+`./testing_ads`
 
-./testing_songs
+`./testing_songs`
 
-./testing_audio
+`./testing_audio`
 
-./resampled_testing_ads
+`./resampled_testing_ads`
 
-./resampled_testing_songs
+`./resampled_testing_songs`
 
 Notebooks are already setup to use the above directories.
 
