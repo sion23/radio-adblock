@@ -1,0 +1,7 @@
+.venv
+ads/
+data/
+resampled_ads/
+resampled_songs/
+songs/
+*.zip
